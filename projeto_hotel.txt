@@ -1,0 +1,11 @@
+create table reserva(
+id_res serial,
+cpf_res varchar(50),
+nome_res varchar(50),
+fone_res varchar(50),
+email_res varchar(50),
+habitacao_res varchar(50),
+nacional_res varchar(50),
+pessoas_res varchar(50),
+constraint reserva_pkey primary key (id_res),
+constraint reserva_cpf unique (cpf_res))
