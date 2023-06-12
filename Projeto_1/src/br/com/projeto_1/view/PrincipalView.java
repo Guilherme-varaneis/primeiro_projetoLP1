@@ -47,12 +47,22 @@ public class PrincipalView extends javax.swing.JFrame {
     private void initComponents() {
 
         desktopPane = new javax.swing.JDesktopPane();
+        jToggleButton1 = new javax.swing.JToggleButton();
         menuBar = new javax.swing.JMenuBar();
         menuCadastro = new javax.swing.JMenu();
         itemMenuReserva = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jToggleButton1.setText("La ele");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jToggleButton1);
+        jToggleButton1.setBounds(450, 180, 77, 29);
 
         menuCadastro.setMnemonic('f');
         menuCadastro.setText("Cadastro");
@@ -103,6 +113,12 @@ public class PrincipalView extends javax.swing.JFrame {
        sair();
     }//GEN-LAST:event_editMenuMouseClicked
 
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        sair();
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+//Mudei a estetica botao do la ele adicionado 
+
     /**
      * @param args the command line arguments
      */
@@ -142,6 +158,7 @@ public class PrincipalView extends javax.swing.JFrame {
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenuItem itemMenuReserva;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenu menuCadastro;
     // End of variables declaration//GEN-END:variables
